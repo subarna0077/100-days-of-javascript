@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/spotify clone/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <i class="fa-solid fa-chevron-down"></i>
+            <p>Now Playing</p>
+            <i class="fa-solid fa-ellipsis"></i>
+        </header>
+
+        <div class="image_and_title_container">
+            <div class="img-area">
+                <img src="" alt="">
+            </div>
+            <div class="song-details">
+                <p class="song-title">
+                  
+                </p>
+                <p class="singer">
+                  
+                </p>
+            </div>
+            <div class="progress-area">
+                <div class="progress-bar">
+                    <span></span>
+                </div>
+                <div class="timer">
+                    <span class="current"></span>
+                    <span class="duration"></span>
+                </div>
+                <audio id="main-audio" src=""></audio>
+
+            </div>
+            <div class="controls">
+                <i id="loop_music" class="fa-solid fa-repeat materials-icon"></i>
+                <i id="left" class="fa-solid fa-backward-step materials-icon"></i>
+                <div class="play-pause">
+                   
+                </div>
+                <i id="right" class="fa-solid fa-forward-step materials-icon"></i>
+                <i id="all_playlist" class="fa-brands fa-playstation materials-icon "></i>
+
+            </div>
+            <div class="music-list">
+                <div class="header">
+                    <div class="row">
+                        <i class="fa-brands fa-playstation materials-icon "></i>
+                      
+                        <span>Music list</span>
+                    </div>
+                    <i id="close" class=" list fa-solid fa-xmark"></i>
+                  </div>
+                  <ul>
+                    <!-- here li list are coming from js -->
+                  </ul>
+                </div>
+        </div>
+    </div>
+
+    <script src="/spotify clone/script.js"></script>
+    <script src="/spotify clone/songs.js"></script>
+</body>
+</html>

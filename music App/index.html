@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/music App/styles.css">
+</head>
+<body>
+    <div class="player">
+        <!-- Define the section for displaying details -->
+        <div class="details">
+          <div class="now-playing">PLAYING x OF y</div>
+          <div class="track-art">
+            <img src="" alt="">
+          </div>
+          <div class="track-name"></div>
+          <div class="track-artist">T</div>
+        </div>
+
+        <!-- Define the section for displaying track buttons -->
+        <div class="buttons">
+          <div class="prev-track">
+            <i class="fa fa-step-backward fa-2x"></i>
+          </div>
+          <div class="playpause-track">
+            <i class="fa fa-play-circle fa-5x"></i>
+          </div>
+          <div class="next-track">
+            <i class="fa fa-step-forward fa-2x"></i>
+          </div>
+        </div>
+        <audio id="main-audio"></audio>
+        <div id="slider_with_time">
+          <div class="progress-area">
+                <div class="slider">
+                </div>
+              </div>
+              <div class="time-holder">
+                <span class="current">00</span>
+                <span class="duration">3.40</span>
+              </div>
+        </div>
+     
+        <!-- Define the section for displaying the seek slider-->
+       
+      </div>
+     
+      <script src="/music App/script.js"></script>
+      <script src="/music App/songs.js"></script>
+    
+</body>
+</html>

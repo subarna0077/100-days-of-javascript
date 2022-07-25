@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+:root{
+    --pink: #ff74a4;
+    --violet: #9f6ea3;
+    --lightblack: #515C6F;
+    --white: #ffffff;
+    --darkwhite: #cecaca;
+    --pinkshadow: #ffcbdd;
+    --lightbshadow: rgba(0,0,0,0.15);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, var(--violet), lightcoral);   
+    text-align: center;
+}
+
+.now-playing {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.track-art {
+   width: auto;
+   height: 230px;
+   background-size: cover;
+   border-radius: 20px;
+   margin-bottom: 15px;
+}
+
+.track-art img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.track-name {
+    color: #515C6F;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons *{
+    cursor: pointer;
+}
+.buttons :nth-child(2){
+    margin: 20px ;
+}
+
+#slider_with_time {
+    width: 100%;
+  
+}
+.slider {
+    position: relative;
+}
+.progress-area {
+    width: 100%;
+    height: 8px;
+    background-color: var(--white);
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+}
+.slider {
+    height: inherit;
+    background-color: rgba(199, 37, 34, 0.776);
+    border-radius: 6px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.slider::before {
+    position: absolute;
+    content: '';
+    display: none;
+    height: 12px;
+    width: 12px;
+    background-color: rgba(199, 37, 34, 1);
+    right: 0%;
+    transition: display 1s ease;
+    border-radius: 50%;
+}
+.time-holder {
+    display: flex;
+    justify-content: space-between;
+    color: var(--lightblack);
+}
+
+.progress-area:hover .slider::before{
+    display: block;
+}
